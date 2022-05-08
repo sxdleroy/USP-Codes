@@ -1,9 +1,10 @@
 //Leroy Hing
 //4/30/2022
-//Assignment
+//S11210431
 
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
 int main()
@@ -12,7 +13,7 @@ int main()
 	
 	float marriot = 5, hilton = 3, uprising = 3, naviti = 1, warwick = 3, vote = 0, sum = 0;
     float percent_marriot, percent_hilton, percent_uprising, percent_naviti, percent_warwick;
-    const int SENTINEL = 6, HUNDRED = 100, ONE = 1, TWO = 2, THREE = 3, FOUR = 4, FIVE = 5;
+    const int SENTINEL = 6;
 	
 	//intro
 	
@@ -24,38 +25,38 @@ int main()
     printf("\n%39s\n", "Please vote for the best hotel!");
     printf("%44s\n\n", "------------------------------------");
 
-    //Body | Code
+    //Body
     
     while(vote != SENTINEL)
     {	
         printf("%14s", "Vote: ");
         cin >> vote;
         
-        if (vote >= ONE && vote <= FIVE)
+        if (vote >= 1 && vote <= 5)
         {
             cout << "\tVote Successfully Cast.\n";
         
-	        if (vote == ONE)
+	        if (vote == 1)
 	        {
 	        	marriot++;
 	        }
 	
-	        else if (vote == TWO)
+	        else if (vote == 2)
 	        {
 	        	hilton++;
 	        }
 	
-	        else if (vote == THREE)
+	        else if (vote == 3)
 	        {
 	        	uprising++;
 	        }
 	
-	        else if (vote == FOUR)
+	        else if (vote == 4)
 	        {
 	        	naviti++;
 	        }
 	
-	        else if (vote == FIVE)
+	        else if (vote == 5)
 	        {
 	        	warwick++;
 	        }
@@ -67,11 +68,11 @@ int main()
 
     sum = marriot + hilton + uprising + naviti + warwick;
 
-    percent_marriot = (marriot / sum) * HUNDRED;
-    percent_hilton = (hilton / sum) * HUNDRED;
-    percent_uprising = (uprising / sum) * HUNDRED;
-    percent_naviti = (naviti / sum) * HUNDRED;
-    percent_warwick= (warwick / sum) * HUNDRED;
+    percent_marriot = (marriot / sum) * 100;
+    percent_hilton = (hilton / sum) * 100;
+    percent_uprising = (uprising / sum) * 100;
+    percent_naviti = (naviti / sum) * 100;
+    percent_warwick= (warwick / sum) * 100;
         
     //Outro || Final
 
@@ -84,6 +85,7 @@ int main()
     printf("\n\t%s%37.0f%27.1f%s", "Warwick Fiji", warwick, percent_warwick,"%");
     printf("\n\n%44s\t\n", "------------------------------------");
 
-    system("pause");
+    
+
     return 0;
 }

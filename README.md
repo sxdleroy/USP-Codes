@@ -1,2 +1,4 @@
-# USP-Codes
-coding cause im horny 🍃
+# USP Codes
+/ / where i post my codes for assignments and projects 🍂
+
+send nudes to Ikanaide#0525

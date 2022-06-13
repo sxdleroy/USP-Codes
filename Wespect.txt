@@ -1,0 +1,193 @@
+info
+
+    version "3.01A14" sw "6.7.1(0.107)G2" 
+    configure 
+        echo "System Configuration"
+#       System Configuration
+        system 
+            name "SMB-IP-SWT-ITC_WOMAN2" 
+            contact "KUNAL_8627218" 
+            location "Garden_City_Raiwaqa" 
+        exit
+        echo "Management configuration"
+#       Management configuration
+        management 
+            echo "SNMP Configuration"
+#           SNMP Configuration
+            snmp 
+                community "read" 
+                    name "solarw" 
+                    sec-name "v1_read" 
+                    no shutdown 
+                exit
+                community "trap" 
+                    name "solarw" 
+                    no shutdown 
+                exit
+                community "write" 
+                    name "private" 
+                    sec-name "v1_write" 
+                    no shutdown 
+                exit
+                target-params "tp1" 
+                    message-processing-model snmpv1 
+                    version snmpv1 
+                    security name "v1_trap" level no-auth-no-priv 
+                    no shutdown 
+                exit
+                target "SOLARWINDS" 
+                    target-params "tp1" 
+                    address udp-domain 10.0.1.26 
+                    no shutdown 
+                    tag-list "unmasked" 
+                exit
+            exit
+            access 
+                ssh-encryption all 
+                ssh-mac all 
+            exit
+        exit
+        echo "Port Configuration"
+#       Port Configuration
+        port 
+            echo "Ethernet - Port Configuration"
+#           Ethernet - Port Configuration
+            ethernet 1 
+                name "*** SMB-IP-AGG-001 : Gi2/0/4  ***" 
+            exit
+            ethernet 2 
+                shutdown 
+            exit
+            ethernet 3 
+                name "*** D161407_RBF_DR_WPAC_DR_SECONDARY_1M  ***" 
+            exit
+            ethernet 4 
+                shutdown 
+            exit
+            ethernet 5 
+                shutdown 
+            exit
+            ethernet 6 
+                shutdown 
+            exit
+            ethernet 101 
+                shutdown 
+            exit
+            echo "Service Virtual Interface- Port Configuration"
+#           Service Virtual Interface- Port Configuration
+            svi 1 
+                name "LOC_MNGT" 
+                no shutdown 
+            exit
+            svi 96 
+                no shutdown 
+            exit
+       exit
+        echo "Bridge Configuration"
+#       Bridge Configuration
+        bridge 1 
+            name "BRIDGE 1" 
+            echo "Bridge Port Configuration"
+#           Bridge Port Configuration
+            port 1 
+                no shutdown 
+            exit
+            port 2 
+                no shutdown 
+            exit
+            port 3 
+                no shutdown 
+            exit
+            port 4 
+                no shutdown 
+            exit
+            port 5 
+                no shutdown 
+            exit
+            echo "VLAN Configuration"
+#           VLAN Configuration
+            vlan 1560
+            exit
+            vlan 1179
+            exit
+            vlan 1560 
+            exit
+            vlan 2023 
+            exit
+        exit
+        echo "Flows Configuration"
+#       Flows Configuration
+        flows 
+            echo "Classifier Profile Configuration"
+#           Classifier Profile Configuration
+            classifier-profile "mng_untagged" match-any 
+                match untagged 
+            exit
+            classifier-profile "mng_all" match-any 
+                match all 
+            exit
+            classifier-profile "MNGT" match-any 
+                match vlan 2023 
+            exit
+            classifier-profile "UNTAG" match-any 
+                match untagged 
+            exit
+            classifier-profile "v1560_D161407" match-any 
+                match vlan 1560 
+            exit
+            classifier-profile "ALL" match-any 
+                match all 
+            exit
+            echo "Flow Configuration"
+#           Flow Configuration
+            flow "MGNT_IN_ALL" 
+                classifier "MNGT" 
+                policer profile "Policer1" 
+                ingress-port ethernet 1 
+                egress-port bridge-port 1 7
+                reverse-direction block 0/1 
+                no shutdown 
+            exit
+            flow "ETX_MGMT_OUT" 
+                classifier "ALL" 
+                policer profile "Policer1" 
+                vlan-tag push vlan 2023 p-bit fixed 0 
+                ingress-port svi 1 
+                egress-port bridge-port 1 6 
+                reverse-direction 
+                no shutdown 
+            exit
+            flow "v1560_1M_IN" 
+                classifier "v1560_D161407" 
+                policer profile "Policer1" 
+                ingress-port ethernet 1 
+                egress-port bridge-port 1 1 
+                reverse-direction block 0/1 
+                no shutdown 
+            exit
+           flow "v1560_ETH3_OUT" 
+        classifier "v1560_D161407" 
+        policer profile "Policer1" 
+        ingress-port ethernet 3 
+        egress-port bridge-port 1 3
+        reverse-direction block 0/1 
+        service-name "D161407_RBF_DR_WPAC_DR_SECONDARY_1M"  
+        no shutdown 
+    exit
+            
+
+        exit
+        router 1 
+            name "Device_Mgmt" 
+            interface 1 
+                address 10.255.255.19/24 
+                bind svi 1 
+                dhcp-client 
+                    client-id mac 
+                exit
+                no shutdown 
+            exit
+            static-route 0.0.0.0/0 address 10.255.255.1 metric 1 
+            static-route 10.0.1.26/32 address 10.255.255.1 metric 1 
+        exit
+    exit

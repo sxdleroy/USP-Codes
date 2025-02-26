@@ -1,6 +1,6 @@
 
 # USP Codes  
-Welcome to **USP Codes** – my digital treasure chest of coding adventures from my Bachelor’s journey at the University of São Paulo! This repo is where I stash the scripts, projects, and snippets I’ve crafted while exploring the wild world of computer science. Think of it as a living portfolio of my academic quests, from late-night debugging to triumphant "it works!" moments.
+Welcome to **USP Codes** – my digital treasure chest of coding adventures from my Bachelor’s journey at the University of The South Pacific! This repo is where I stash the scripts, projects, and snippets I’ve crafted while exploring the wild world of computer science. Think of it as a living portfolio of my academic quests, from late-night debugging to triumphant "it works!" moments.
 
 ## What’s Inside?  
 This repository is a collection of code from my USP courses – everything from algorithms to data structures, maybe a little Python spice, or some C++ grit. Each folder or file here tells a story of a problem tackled, a concept grasped, or a deadline narrowly escaped. It’s not just about the solutions; it’s about the journey of learning through trial, error, and coffee.

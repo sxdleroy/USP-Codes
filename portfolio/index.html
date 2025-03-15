@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leroy Hing - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer Portfolio">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-[#111111]">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-[#1a1a1a] bg-opacity-80 backdrop-blur-md z-[100] py-4 px-6 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white glow">Leroy Hing</a>
+        <div class="space-x-6 hidden lg:flex">
+            <a href="#about" class="text-gray-300 hover:text-blue-500 transition-colors duration-300">About</a>
+            <a href="#skills" class="text-gray-300 hover:text-blue-500 transition-colors duration-300">Skills</a>
+            <a href="#experience" class="text-gray-300 hover:text-blue-500 transition-colors duration-300">Experience</a>
+            <a href="#projects" class="text-gray-300 hover:text-blue-500 transition-colors duration-300">Projects</a>
+        </div>
+        <button id="nav-toggle" class="lg:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </nav>
+    <div id="nav-menu" class="hidden lg:hidden bg-[#1a1a1a] w-full absolute top-16 left-0 p-6 space-y-4 text-center">
+        <a href="#about" class="block text-gray-300 hover:text-blue-500 transition-colors duration-300">About</a>
+        <a href="#skills" class="block text-gray-300 hover:text-blue-500 transition-colors duration-300">Skills</a>
+        <a href="#experience" class="block text-gray-300 hover:text-blue-500 transition-colors duration-300">Experience</a>
+        <a href="#projects" class="block text-gray-300 hover:text-blue-500 transition-colors duration-300">Projects</a>
+    </div>
+
+    <div class="container mx-auto px-4">
+        <!-- Header with Profile Image -->
+        <header class="relative bg-[#1a1a1a] p-8 rounded-xl shadow-lg text-center mt-24">
+            <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 border-4 border-gray-700 animate-pulse">
+                <img src="https://via.placeholder.com/150" alt="Leroy Hing" class="object-cover w-full h-full">
+            </div>
+            <h1 class="text-4xl font-bold text-white glow">Leroy Hing</h1>
+            <h2 class="text-2xl font-semibold text-gray-200 mt-2">Full Stack Web Developer</h2>
+            <p class="text-base text-gray-400 mt-1">📍 Suva, Fiji 🇫🇯</p>
+            <p class="text-base text-gray-300 mt-2 italic">Building Real Products For Real Clients, Not Just More Projects</p>
+            <nav class="mt-6 space-x-4 flex justify-center flex-wrap gap-2">
+                <a href="Oskar Frantti Glen Resume.pdf" download class="text-blue-500 hover:text-blue-700 transition-colors duration-300">Resume</a>
+                <a href="https://github.com/OskarFranttiGlen" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+                <a href="mailto:OskarFranttiGlen@gmail.com" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">Email</a>
+                <a href="https://www.linkedin.com/in/oskar-frantti-glen-64ba0b1a2/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">LinkedIn</a>
+            </nav>
+            <button id="contact-btn" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300">Contact Me</button>
+            <div id="contact-info" class="hidden mt-4 text-gray-300 bg-[#2a2a2a] p-4 rounded-lg">
+                <p>Email: <a href="mailto:OskarFranttiGlen@gmail.com" class="text-blue-500 hover:text-blue-700">OskarFranttiGlen@gmail.com</a></p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="mt-16 mb-12">
+            <h2 class="text-3xl font-semibold text-white glow">About Me</h2>
+            <div class="mt-6 text-gray-300 space-y-4 max-w-[800px] mx-auto">
+                <p>I’m a passionate, determined, and innovative future full stack developer, currently pursuing a Bachelor’s in Software Engineering at the University of the South Pacific.</p>
+                <p>For over four years, I’ve brought creative web projects to life, showcased proudly on my social platforms, while mastering Adobe tools (After Effects, Photoshop, Illustrator) and 3D/motion design with Blender and Cinema 4D.</p>
+                <p>Eager to harness cutting-edge tech and hands-on experience, I’m poised to deliver exceptional value as a dynamic full stack talent.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-semibold text-white glow">Skills</h2>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-4 bg-[#1a1a1a] rounded-lg shadow-lg">
+                    <h3 class="text-xl font-medium text-gray-200">Languages</h3>
+                    <p class="text-sm text-gray-300 mt-2">JavaScript, TypeScript, Python, C++, C#, Rust</p>
+                </div>
+                <div class="p-4 bg-[#1a1a1a] rounded-lg shadow-lg">
+                    <h3 class="text-xl font-medium text-gray-200">Frameworks</h3>
+                    <p class="text-sm text-gray-300 mt-2">ReactJS, NextJS, Tauri, React Native, ExpressJS, Flask, Django, ASP.NET</p>
+                </div>
+                <div class="p-4 bg-[#1a1a1a] rounded-lg shadow-lg">
+                    <h3 class="text-xl font-medium text-gray-200">Backend</h3>
+                    <p class="text-sm text-gray-300 mt-2">Node.js, .NET, REST APIs, Microservices</p>
+                </div>
+                <div class="p-4 bg-[#1a1a1a] rounded-lg shadow-lg">
+                    <h3 class="text-xl font-medium text-gray-200">Databases</h3>
+                    <p class="text-sm text-gray-300 mt-2">PostgreSQL, SQL, MongoDB, Elasticsearch</p>
+                </div>
+                <div class="p-4 bg-[#1a1a1a] rounded-lg shadow-lg">
+                    <h3 class="text-xl font-medium text-gray-200">Practices</h3>
+                    <p class="text-sm text-gray-300 mt-2">Microservices, Microfrontend, Agile, Git</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-semibold text-white glow">Experience</h2>
+            <div class="mt-6 space-y-8">
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-medium text-gray-200">Technical Implementation Analyst - Juvare</h3>
+                    <p class="text-sm text-gray-400">March 2024 - Present | Melbourne, Australia</p>
+                    <ul class="text-sm text-gray-300 mt-2 list-disc ml-6">
+                        <li>Configure WebEOC framework for emergency response systems.</li>
+                        <li>Liaise with clients across Australia and New Zealand.</li>
+                        <li>Create documentation and provide Tier 2 support.</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mt-2">Skills: HTML, CSS, JavaScript, jQuery, Bootstrap, REST APIs, SQL Server, WebEOC</p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-medium text-gray-200">Freelance Full-Stack Web Developer - Self-Employed</h3>
+                    <p class="text-sm text-gray-400">2022 - Present | Melbourne, Australia</p>
+                    <ul class="text-sm text-gray-300 mt-2 list-disc ml-6">
+                        <li>Completed 20+ projects, including dashboards and full applications.</li>
+                        <li>Delivered custom solutions using modern technologies.</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mt-2">Skills: React, Next.js, Supabase, TypeScript, Node.js</p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-medium text-gray-200">CTO & Founder - Shifti</h3>
+                    <p class="text-sm text-gray-400">April 2023 - Present | Melbourne, Australia</p>
+                    <ul class="text-sm text-gray-300 mt-2 list-disc ml-6">
+                        <li>Led development of an AI-powered shift scheduling platform.</li>
+                        <li>Architected scalable microservices backend and responsive front-end.</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mt-2">Skills: NextJS, Supabase, React Native, Expo, Machine Learning, Tauri</p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-xl font-medium text-gray-200">Software Development Intern - Preezie</h3>
+                    <p class="text-sm text-gray-400">November 2022 - March 2023 | Melbourne, Australia</p>
+                    <ul class="text-sm text-gray-300 mt-2 list-disc ml-6">
+                        <li>Worked with Angular 4, React, .NET, and microservices.</li>
+                        <li>Debugged code and collaborated with cross-functional teams.</li>
+                    </ul>
+                    <p class="text-sm text-gray-300 mt-2">Skills: Angular 4, React, .NET, Microservices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16">
+            <h2 class="text-3xl font-semibold text-white glow">Education</h2>
+            <div class="mt-6 p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <h3 class="text-xl font-medium text-gray-200">Bachelor of Software Engineering - University of the South Pacific</h3>
+                <p class="text-sm text-gray-400">2023 - Present | Suva, Fiji</p>
+                <p class="text-sm text-gray-300 mt-2">Currently pursuing a degree with a focus on software development, web technologies, and system design.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-semibold text-white glow">Projects</h2>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">QuantumPass</h3>
+                    <p class="text-sm text-gray-400 mt-2">Secure password manager using post-quantum cryptography.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: Rust, Post-Quantum Cryptography</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/quantum-pass" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://quantum-pass-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">InvoiceNinja</h3>
+                    <p class="text-sm text-gray-400 mt-2">Invoicing app for freelancers with expense tracking.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: React, Node.js, MongoDB, Stripe API</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/invoice-ninja" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://invoice-ninja-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">FitQuest</h3>
+                    <p class="text-sm text-gray-400 mt-2">Gamified workout app with personalized plans.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: React Native, Firebase, TensorFlow.js</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/fitquest" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://fitquest-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">StudyBuddy</h3>
+                    <p class="text-sm text-gray-400 mt-2">Study management tool with calendar integration.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: Vue.js, Express.js, PostgreSQL</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/studybuddy" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://studybuddy-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">Collectify</h3>
+                    <p class="text-sm text-gray-400 mt-2">App for managing personal collections.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: React, Redux, Node.js, MongoDB</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/collectify" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://collectify-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+                <div class="p-6 bg-[#1a1a1a] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-medium text-gray-200">ShowTrackr</h3>
+                    <p class="text-sm text-gray-400 mt-2">TV & movie release tracker with watchlists.</p>
+                    <p class="text-sm text-gray-300 mt-1">Skills: Angular, NestJS, PostgreSQL, TMDb API</p>
+                    <p class="text-sm mt-2"><a href="https://github.com/yourusername/showtrackr" target="_blank" class="text-blue-500 hover:text-blue-700">Code</a> | <a href="https://showtrackr-demo.com/" target="_blank" class="text-blue-500 hover:text-blue-700">Demo</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#2a2a2a] p-6 text-gray-400 text-center rounded-t-xl">
+            <p class="text-sm">Designed and built by Oskar Frantti Glen</p>
+            <p class="text-sm mt-1">© 2025 All rights reserved</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Contact Button Toggle
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            const contactInfo = document.getElementById('contact-info');
+            contactInfo.classList.toggle('hidden');
+            this.textContent = contactInfo.classList.contains('hidden') ? 'Contact Me' : 'Hide Contact';
+        });
+
+        // Mobile Navigation Toggle
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const navMenu = document.getElementById('nav-menu');
+                if (!navMenu.classList.contains('hidden')) {
+                    navMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Fade-in Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, .p-6').forEach(element => {
+            element.classList.add('opacity-0');
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>

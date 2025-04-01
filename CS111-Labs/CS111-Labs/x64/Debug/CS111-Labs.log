@@ -1,2 +1,2 @@
-﻿  CS111-Labs.cpp
-  CS111-Labs.vcxproj -> C:\Users\leroy\source\repos\CS111-Labs\x64\Debug\CS111-Labs.exe
+﻿Wage Calculator.obj : error LNK2005: main already defined in Assign1S11210431.obj
+C:\Users\leroy\Documents\GitHub\USP-Codes\CS111-Labs\x64\Debug\CS111-Labs.exe : fatal error LNK1169: one or more multiply defined symbols found

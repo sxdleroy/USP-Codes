@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71DA96FB-C404-4FFE-859D-9244E7D89CC3}|CS111-Labs\\CS111-Labs.vcxproj|C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Wage Calculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71DA96FB-C404-4FFE-859D-9244E7D89CC3}|CS111-Labs\\CS111-Labs.vcxproj|solutionrelative:CS111-Labs\\Wage Calculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71DA96FB-C404-4FFE-859D-9244E7D89CC3}|CS111-Labs\\CS111-Labs.vcxproj|C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Assign1S11210431.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71DA96FB-C404-4FFE-859D-9244E7D89CC3}|CS111-Labs\\CS111-Labs.vcxproj|solutionrelative:CS111-Labs\\Assign1S11210431.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Wage Calculator.cpp",
+              "DocumentMoniker": "C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Wage Calculator.cpp",
+              "RelativeDocumentMoniker": "CS111-Labs\\Wage Calculator.cpp",
+              "ToolTip": "C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Wage Calculator.cpp",
+              "RelativeToolTip": "CS111-Labs\\Wage Calculator.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-01T07:28:34.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assign1S11210431.cpp",
+              "DocumentMoniker": "C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Assign1S11210431.cpp",
+              "RelativeDocumentMoniker": "CS111-Labs\\Assign1S11210431.cpp",
+              "ToolTip": "C:\\Users\\leroy\\Documents\\GitHub\\USP-Codes\\CS111-Labs\\CS111-Labs\\Assign1S11210431.cpp",
+              "RelativeToolTip": "CS111-Labs\\Assign1S11210431.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-01T07:30:07.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

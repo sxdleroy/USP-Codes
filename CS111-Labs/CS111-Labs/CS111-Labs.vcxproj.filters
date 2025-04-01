@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CS111-Labs.cpp">
+    <ClCompile Include="Wage Calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Assign1S11210431.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
